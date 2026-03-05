@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동원ENG 가공사업부 | ㈜동원엔지니어링</title>
+  <!-- Font Awesome (로컬) -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- AdminLTE 3 (로컬, Bootstrap 4 포함) -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+  <style>
+    .content-wrapper { padding: 0; }
+    /* 슬라이드형 본문: PPT 페이지별 한 화면 */
+    #slideContainer {
+      height: calc(100vh - 57px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slide-section {
+      min-height: calc(100vh - 57px);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      box-sizing: border-box;
+    }
+    .slide-section.cover-section {
+      justify-content: center;
+      text-align: center;
+    }
+    .slide-section.cover-section h1 { font-size: 1.9rem; }
+    .slide-section .subtitle { color: #007bff; margin-top: 0.5rem; }
+    .slide-section .company { margin-top: 1.5rem; color: #6c757d; }
+    .slide-section .section-img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .slide-section .section-img-wrap { margin-bottom: 1rem; text-align: center; }
+    .slide-section .section-imgs .section-img { margin: 0.25rem; max-height: 180px; object-fit: contain; }
+  </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <span class="nav-link">동원ENG 가공사업부 회사소개서</span>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="#" class="brand-link text-center">
+      <span class="brand-text font-weight-light">동원ENG</span>
+    </a>
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+          <li class="nav-item">
+            <a href="#cover" class="nav-link menu-link" data-section="cover">
+              <i class="nav-icon fas fa-home"></i>
+              <p>표지</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#intro" class="nav-link menu-link" data-section="intro">
+              <i class="nav-icon fas fa-building"></i>
+              <p>회사 개요</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#machining-intro" class="nav-link menu-link" data-section="machining-intro">
+              <i class="nav-icon fas fa-industry"></i>
+              <p>가공사업부 소개</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#business" class="nav-link menu-link" data-section="business">
+              <i class="nav-icon fas fa-briefcase"></i>
+              <p>사업 분야</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#equipment" class="nav-link menu-link" data-section="equipment">
+              <i class="nav-icon fas fa-tools"></i>
+              <p>보유 설비</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#process" class="nav-link menu-link" data-section="process">
+              <i class="nav-icon fas fa-project-diagram"></i>
+              <p>Project 프로세스</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#swot" class="nav-link menu-link" data-section="swot">
+              <i class="nav-icon fas fa-chart-line"></i>
+              <p>SWOT 분석</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#organization" class="nav-link menu-link" data-section="organization">
+              <i class="nav-icon fas fa-sitemap"></i>
+              <p>조직도</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link menu-link" data-section="contact">
+              <i class="nav-icon fas fa-address-card"></i>
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <div id="slideContainer">
+      <!-- 슬라이드 1: 표지 (PPT slide1 이미지) -->
+      <section id="cover" class="slide-section cover-section" data-title="표지">
+        <div class="section-img-wrap">
+          <img src="images/image4.jpeg" alt="표지" class="section-img" style="max-height: 50vh;">
+        </div>
+        <h1>동원ENG 가공사업부</h1>
+        <p class="subtitle">회사소개서</p>
+        <p class="company">㈜동원엔지니어링</p>
+      </section>
+
+      <!-- 슬라이드 2: 회사 개요 (PPT slide2 이미지) -->
+      <section id="intro" class="slide-section" data-title="회사 개요">
+        <h2 class="mb-3">회사 개요</h2>
+        <div class="section-img-wrap mb-3">
+          <img src="images/image5.jpeg" alt="회사 개요" class="section-img" style="max-height: 320px;">
+        </div>
+        <p>㈜동원엔지니어링은 <strong>반도체·FPD·OLED·2차전지 자동화 설비 전문 기업</strong>입니다.</p>
+        <div class="card card-outline card-primary">
+          <div class="card-body">
+            <ul class="mb-0">
+              <li>설계 → 제작 → 전장 → Set-Up → 이설 → C/S까지 수행하는 <strong>통합 엔지니어링 기업</strong></li>
+              <li>삼성전자, 삼성SDI, 하이닉스 등 주요 고객사 설비 이설·자동화 프로젝트 수행</li>
+              <li>2차전지 및 SiC 잉곳 장비 개발 확대</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 3: 가공사업부 소개 (PPT 사업분야 관련 이미지) -->
+      <section id="machining-intro" class="slide-section" data-title="가공사업부 소개">
+        <h2 class="mb-3">가공사업부 소개</h2>
+        <div class="section-img-wrap mb-3">
+          <img src="images/image6.png" alt="가공사업부" class="section-img" style="max-height: 280px;">
+        </div>
+        <p>가공사업부는 동원엔지니어링의 <strong>금속 가공 전문 조직</strong>으로, 자동화·OEM·제어 사업과 연계하여 정밀 부품 제작 및 Turnkey 대응을 담당합니다.</p>
+        <div class="card card-outline card-primary">
+          <div class="card-header"><h3 class="card-title">역할 및 특징</h3></div>
+          <div class="card-body">
+            <ul class="mb-0">
+              <li>반도체·FPD·2차전지 설비용 정밀 부품 가공</li>
+              <li>소량 다품종부터 양산까지 유연한 생산 체계</li>
+              <li>CAM·가공 20~30년 경력 전문 인력 보유</li>
+              <li>동원ENG 내 설비 부품 내재화 및 원가 경쟁력 확보</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 4: 사업 분야 (PPT slide6 이미지들) -->
+      <section id="business" class="slide-section" data-title="사업 분야">
+        <h2 class="mb-3">사업 분야</h2>
+        <div class="section-imgs mb-3 d-flex flex-wrap justify-content-center">
+          <img src="images/image6.png" alt="사업분야" class="section-img">
+          <img src="images/image7.png" alt="사업분야" class="section-img">
+          <img src="images/image8.png" alt="사업분야" class="section-img">
+          <img src="images/image9.png" alt="사업분야" class="section-img">
+          <img src="images/image10.png" alt="사업분야" class="section-img">
+          <img src="images/image11.jpeg" alt="사업분야" class="section-img">
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-outline card-primary">
+              <div class="card-header"><h3 class="card-title">자동화 사업 (TSP)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>Cell Laminator</li>
+                  <li>Vision Laminator</li>
+                  <li>Full Auto Laminator</li>
+                  <li>ACF & FPCB Bonder</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-outline card-primary">
+              <div class="card-header"><h3 class="card-title">OEM 사업</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>Turnkey 자동화 Line 제작</li>
+                  <li>장비 반입 / 반출 / 이설</li>
+                  <li>기구·전장 작업 및 SET-UP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-outline card-primary">
+              <div class="card-header"><h3 class="card-title">제어 System 사업</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>2차전지 생산설비 전장 SET-UP</li>
+                  <li>PLC / PC 소프트웨어 설계</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-outline card-primary">
+              <div class="card-header"><h3 class="card-title">SiC 잉곳 장비 개발</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>액상법 기반 생산 설비</li>
+                  <li>공정 재현성 확보</li>
+                  <li>확장성 및 원가 경쟁력</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-outline card-success">
+              <div class="card-header"><h3 class="card-title">금속 가공 (가공사업부)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>Vertical M/C 8대 보유</li>
+                  <li>NX 10.0 / Mastercam / NCGCAM 활용</li>
+                  <li>CAM 경력 20~30년 전문 인력</li>
+                  <li>정밀 베이스·브라켓·구조물 등 설비 부품 가공</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 5: 보유 설비 -->
+      <section id="equipment" class="slide-section" data-title="보유 설비">
+        <h2 class="mb-3">보유 설비</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-outline card-primary">
+              <div class="card-header"><h3 class="card-title">가공 설비</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li><strong>Vertical M/C 8대</strong> 보유 (고속·고정밀 가공)</li>
+                  <li>선반, 드릴링, 탭핑 등 지원 설비</li>
+                  <li>측정·검사 장비</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-outline card-info">
+              <div class="card-header"><h3 class="card-title">소프트웨어 및 인력</h3></div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li><strong>NX 10.0</strong> / <strong>Mastercam</strong> / <strong>NCGCAM</strong></li>
+                  <li>CAM 경력 20~30년 전문 인력</li>
+                  <li>고객 도면·요구사항 기반 최적 가공 조건 설계</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 6: Project 수행 프로세스 (PPT slide8 이미지들) -->
+      <section id="process" class="slide-section" data-title="Project 프로세스">
+        <h2 class="mb-3">Project 수행 프로세스</h2>
+        <div class="section-imgs mb-3 d-flex flex-wrap justify-content-center">
+          <img src="images/image17.png" alt="프로세스" class="section-img">
+          <img src="images/image18.png" alt="프로세스" class="section-img">
+          <img src="images/image19.png" alt="프로세스" class="section-img">
+          <img src="images/image20.png" alt="프로세스" class="section-img">
+          <img src="images/image21.png" alt="프로세스" class="section-img">
+          <img src="images/image22.png" alt="프로세스" class="section-img">
+        </div>
+        <div class="card card-outline card-primary">
+          <div class="card-body">
+            <ol class="mb-0 pl-3">
+              <li>고객 요구 분석</li>
+              <li>기능 Diagram 설계</li>
+              <li>제작 및 전장 작업</li>
+              <li>현장 설치 및 시운전</li>
+              <li>C/S 지원</li>
+            </ol>
+          </div>
+        </div>
+        <p class="mt-3">가공사업부는 위 프로세스 내 <strong>제작 단계(금속 가공·부품 제작)</strong>를 담당하며, 자동화·OEM·제어 조직과 협업하여 Turnkey 프로젝트를 수행합니다.</p>
+      </section>
+
+      <!-- 슬라이드 7: SWOT 분석 (PPT slide10 등 이미지) -->
+      <section id="swot" class="slide-section" data-title="SWOT 분석">
+        <h2 class="mb-3">SWOT 분석</h2>
+        <div class="section-img-wrap mb-3 d-flex justify-content-center flex-wrap">
+          <img src="images/image23.png" alt="SWOT" class="section-img mr-2" style="max-height: 220px;">
+          <img src="images/image24.jpeg" alt="SWOT" class="section-img" style="max-height: 220px;">
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-outline card-success">
+              <div class="card-header"><h3 class="card-title">Strength (강점)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0 small">
+                  <li>Clean Room 환경 경험</li>
+                  <li>반도체·FPD 자동화 Project 경험</li>
+                  <li>Laser / Robot / Utility Infra 확보</li>
+                  <li>금속 가공 전문 인력 및 설비</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-outline card-secondary">
+              <div class="card-header"><h3 class="card-title">Weakness (약점)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0 small">
+                  <li>규모 대비 인력·설비 확장 시 관리 이슈 대응 필요</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-outline card-info">
+              <div class="card-header"><h3 class="card-title">Opportunity (기회)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0 small">
+                  <li>2차전지 및 Industrial 분야 확장 가능</li>
+                  <li>사업 다각화 추진</li>
+                  <li>내재화 수요에 따른 가공 수주 확대</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-outline card-danger">
+              <div class="card-header"><h3 class="card-title">Threat (위협)</h3></div>
+              <div class="card-body">
+                <ul class="mb-0 small">
+                  <li>원자재·인건비 상승 등 원가 압력</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 8: 조직도 (PPT slide18 이미지) -->
+      <section id="organization" class="slide-section" data-title="조직도">
+        <h2 class="mb-3">조직도</h2>
+        <div class="section-img-wrap mb-3">
+          <img src="images/image46.png" alt="조직도" class="section-img" style="max-height: 400px;">
+        </div>
+        <div class="card card-outline card-primary">
+          <div class="card-body">
+            <p class="mb-1"><strong>대표이사</strong></p>
+            <p class="mb-1">경영지원 / 구매 / 제조기술 / 기술연구소 / 품질팀 / 고객지원</p>
+            <p class="text-muted small mt-2 mb-0">※ 가공사업부는 제조기술·생산 조직과 연계하여 운영됩니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 슬라이드 9: Contact (PPT 이미지) -->
+      <section id="contact" class="slide-section" data-title="Contact">
+        <h2 class="mb-3">Contact</h2>
+        <div class="section-img-wrap mb-3 d-flex justify-content-center flex-wrap">
+          <img src="images/image61.jpeg" alt="연락처" class="section-img mr-2" style="max-height: 260px;">
+          <img src="images/image62.png" alt="연락처" class="section-img" style="max-height: 260px;">
+        </div>
+        <div class="card card-outline card-primary">
+          <div class="card-body">
+            <p class="mb-1"><strong>주소</strong>: 경기도 화성시 봉담읍 덕우리 150-12</p>
+            <p class="mb-1"><strong>회사명</strong>: ㈜동원엔지니어링</p>
+            <p class="mb-0"><strong>가공사업부</strong>: (전화·이메일 등 추가 시 여기에 기재)</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script>
+$(function () {
+  var $container = $('#slideContainer');
+  var $sections = $('.slide-section');
+  var $links = $('.menu-link');
+
+  $links.on('click', function (e) {
+    e.preventDefault();
+    var id = $(this).data('section');
+    var el = document.getElementById(id);
+    if (el) {
+      $container[0].scrollTo({ top: el.offsetTop, behavior: 'smooth' });
+    }
+  });
+
+  function updateActive() {
+    var scrollTop = $container.scrollTop();
+    var current = '';
+    $sections.each(function () {
+      var el = this;
+      var offset = el.offsetTop - $container.height() / 3;
+      if (scrollTop >= offset) current = el.id;
+    });
+    $links.removeClass('active');
+    $links.filter('[data-section="' + current + '"]').addClass('active');
+  }
+
+  $container.on('scroll', updateActive);
+  $(window).on('load', updateActive);
+});
+</script>
+</body>
+</html>
